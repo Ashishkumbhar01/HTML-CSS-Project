@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Swipe Screen Lock</title>
+<style>
+*{margin:0;padding:0;}
+body {
+width:100%;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background-color:black;
+margin:auto;
+flex-direction:column;
+color:white;
+}
+h2 {
+margin:100px;
+color:yellow;
+}
+.switch {
+width:180px;
+height:50px;
+background-color:white;
+border-radius:35px;
+position:relative;
+text-align:center;
+}
+
+.switch .btn {
+width:40px;
+height:40px;
+position:absolute;
+background-color:white;
+border-radius:50%;
+cursor:pointer;
+top:10%;
+left:2%;
+box-shadow:black 2px 2px 8px;
+transition:0.3s;
+}
+.switch .btn:hover {
+box-shadow:black -2px 2px 8px;
+transition:0.3s;
+transform:translateX(134px);
+}
+.switch .txt {
+text-align:center;
+color:gray;
+font-family:sans-serif;
+font-weight:bold;
+font-variant:small-caps; 
+position:absolute;
+top:33%;
+left:33%;
+letter-spacing:2px;
+}
+
+.arw {
+width:15px;
+height:4px;
+position:absolute;
+background-color:gray;
+top:35%;
+left:32%;
+margin:auto;
+transform:rotate(55deg);
+}
+
+.arw:after {
+content:"";
+width:15px;
+height:4px;
+background-color:gray;
+position:absolute;
+top:140%;
+left:40%;
+transform:rotate(-95deg);
+}
+</style>
+</head>
+<body>
+<h2>Slide Button </h2>
+<div class="switch">
+  <span class="txt">Swipe Right</span>
+  <div class="btn">
+    <div class="arw">
+   </div>
+ </div>
+</div>
+
+</body>
+</html>
