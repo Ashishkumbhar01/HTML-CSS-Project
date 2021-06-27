@@ -1,0 +1,45 @@
+<style>
+body {
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#222;
+}
+.c {
+width:20px;
+height:20px;
+background:rgb(30,120,255);
+border-radius:50%;
+border:2px solid white;
+position:relative;
+}
+.t {
+width:10px;
+height:2px;
+background:white;
+position:absolute;
+top:43%;
+left:33%;
+transform:rotate(-45deg);
+}
+
+.t:after{
+content:"";
+width:6px;
+height:2px;
+background:white;
+position:absolute;
+top:-110%;
+left:-30%;
+transform:rotate(90deg);
+}
+
+input {
+position:absolute;
+top:10%;
+}
+</style>
+<div class="c">
+<div class="t"></div>
+</div>
